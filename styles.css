@@ -24,12 +24,13 @@ button {
 
 /* Back-timer */
 .back-timer {
-  margin: 100px;
+  width: 1000px;
+  margin: 0 auto;
   font-weight: 700;
 }
 .field {
   display: inline-block;
-  width: 300px;
+  width: 240px;
   text-align: center;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
 }
@@ -46,7 +47,7 @@ button {
 }
 .text {
   font-size: 40px;
-  width: 1200px;
+  width: 1000px;
   color: red;
   text-align: center;
 }
