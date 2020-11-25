@@ -1,0 +1,12 @@
+.clockface {
+  font-size: 80px;
+  font-weight: 600;
+  color: blue;
+}
+
+button {
+  width: 160px;
+  height: 70px;
+  font-size: 40px;
+  background-color: aqua;
+}
