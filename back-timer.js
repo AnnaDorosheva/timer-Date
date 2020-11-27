@@ -19,28 +19,35 @@ class CountdownTimer {
       this.currentTime = Date.now();
 
       this.intervalTime = this.targetDate - this.currentTime;
-      const days = String(
+
+      const days = this.pad(
         Math.floor(this.intervalTime / (1000 * 60 * 60 * 24))
-      ).padStart(2, "0");
-      const hours = String(
+      );
+      const hours = this.pad(
         Math.floor(
           (this.intervalTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         )
-      ).padStart(2, "0");
-      const mins = String(
+      );
+      const mins = this.pad(
         Math.floor((this.intervalTime % (1000 * 60 * 60)) / (1000 * 60))
-      ).padStart(2, "0");
-      const secs = String(
+      );
+      const secs = this.pad(
         Math.floor((this.intervalTime % (1000 * 60)) / 1000)
-      ).padStart(2, "0");
+      );
 
-      this.refs.days.textContent = days;
-      this.refs.hours.textContent = hours;
-      this.refs.mins.textContent = mins;
-      this.refs.secs.textContent = secs;
+      this.updateClockface(days, hours, mins, secs);
     }, 1000);
-  }
 
+  }
+  pad(value) {
+    return String(value).padStart(2, '0');
+  }
+  updateClockface(day, hour, min, sec) {
+    this.refs.days.textContent = day;
+    this.refs.hours.textContent = hour;
+    this.refs.mins.textContent = min;
+    this.refs.secs.textContent = sec;
+  }
 }
 
 new CountdownTimer({
