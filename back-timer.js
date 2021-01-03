@@ -1,7 +1,7 @@
 "use strict";
 
 class CountdownTimer {
-  constructor({ selector, targetDate = new Date("December 17, 2020") }) {
+  constructor({ selector, targetDate = new Date("January 30, 2021") }) {
     (this.targetDate = targetDate),
       (this.selector = document.querySelector(`${selector}`)),
       (this.refs = {
@@ -52,7 +52,7 @@ class CountdownTimer {
 
 new CountdownTimer({
   selector: "#timer-1",
-  targetDate: new Date("December 17, 2020"),
+  targetDate: new Date("January 30, 2021"),
 });
 
 new CountdownTimer({
