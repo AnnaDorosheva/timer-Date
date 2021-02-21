@@ -57,5 +57,5 @@ new CountdownTimer({
 
 new CountdownTimer({
   selector: "#timer-2",
-  targetDate: new Date("February 15, 2021"),
+  targetDate: new Date("February 15, 2022"),
 });
