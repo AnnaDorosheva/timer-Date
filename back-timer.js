@@ -52,10 +52,10 @@ class CountdownTimer {
 
 new CountdownTimer({
   selector: "#timer-1",
-  targetDate: new Date("July 30, 2021"),
+  targetDate: new Date("July 30, 2022"),
 });
 
 new CountdownTimer({
   selector: "#timer-2",
-  targetDate: new Date("February 15, 2022"),
+  targetDate: new Date("February 15, 2023"),
 });
